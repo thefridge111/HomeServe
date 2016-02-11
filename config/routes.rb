@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'home_screen/index'
+
+  get 'contact' => 'contact#list'
+  get 'home' => 'home_screen#index'
+  get 'movies' => 'movies#list'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
